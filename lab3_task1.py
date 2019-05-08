@@ -126,6 +126,7 @@ def task2():
         text = "{}: {:.2f}%".format(label, preds[0][i] * 100)
         print("{}, {}".format(imagePath, text))
 
-
-task1()
-task2()
+print("Put All Data in one directory, each data directory must have the classess to classify to them")
+data_path = input("Enter path of data: ")
+task1(data_path)
+task2(data_path)
